@@ -21,7 +21,6 @@ def generatePrompt():
     response = openai.Completion.create(model=model, prompt=prompt, temperature=temperature, max_tokens=max_tokens)
     return response.choices[0]['text'].replace('\"','') + " Digital art"
     
-
 answers = stability_api.generate(
     prompt = generatePrompt(),
     steps = 30, # defaults to 30 if not specified
