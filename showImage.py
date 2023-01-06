@@ -13,6 +13,7 @@ def showFullScreen(pilImage):
     root.overrideredirect(1)
     root.geometry("%dx%d+0+0" % (w, h))
     root.focus_set()
+    root.focus_force()
     root.bind("<Escape>", lambda e: (e.widget.withdraw(), e.widget.quit()))
     canvas = tkinter.Canvas(root,width=w,height=h)
     canvas.pack()

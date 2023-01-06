@@ -22,7 +22,7 @@ cap.release()
 
 initImg=Image.open("webcam.png")
 answers = stability_api.generate(
-    prompt = "Van Gogh painting of a man with dark beard",
+    prompt = "Van Gogh painting of a woman",
     steps = 50, # defaults to 30 if not specified
     width = 512,
     height = 256,
