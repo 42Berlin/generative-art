@@ -6,7 +6,7 @@ Clone repository https://github.com/Stability-AI/stability-sdk
 # simplePrompt
 This is a simple example that should run out of the box
 
-# caremaPaint
+# cameraPaint
 This program creates images based on pictures from a camera. In case you are using a USB webcam, please you will need to change the code as described [here](https://stackoverflow.com/questions/52029233/how-to-make-usb-camera-work-with-opencv)
 
 # hitchhikers
