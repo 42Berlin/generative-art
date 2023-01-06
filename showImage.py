@@ -14,8 +14,7 @@ def showFullScreen(pilImage):
     root.geometry("%dx%d+0+0" % (w, h))
     root.focus_set()
     root.focus_force()
-    # root.bind_all('<Key>', lambda e: (e.widget.withdraw(), e.widget.quit()))
-    root.bind_all('<Key>', lambda e: (root.destroy()))
+    root.bind_all('<Key>', lambda e: (e.widget.withdraw(), e.widget.quit()))
     canvas = tkinter.Canvas(root,width=w,height=h)
     canvas.pack()
     canvas.configure(background='black')
@@ -27,4 +26,6 @@ def showFullScreen(pilImage):
     image = ImageTk.PhotoImage(pilImage)
     imagesprite = canvas.create_image(w/2,h/2,image=image)
     root.mainloop()
-    #root.bind_all('<Key>', root.destroy())
+
+def showWindow(pilImage):
+    pilImage.show()

@@ -24,4 +24,4 @@ for resp in answers:
                 "Please modify the prompt and try again.")
         if artifact.type == generation.ARTIFACT_IMAGE:
             img = Image.open(io.BytesIO(artifact.binary))
-            showImage.showFullScreen(img)
+            showImage.showWindow(img)
