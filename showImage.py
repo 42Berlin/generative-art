@@ -26,4 +26,4 @@ def showFullScreen(pilImage):
     image = ImageTk.PhotoImage(pilImage)
     imagesprite = canvas.create_image(w/2,h/2,image=image)
     root.mainloop()
-    root.bind_all('<Key>', lambda e: (e.widget.withdraw(), e.widget.quit()))
+    root.bind_all('<Key>', root.destroy())
